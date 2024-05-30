@@ -1,0 +1,427 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		439621FD2C03890B001C7EDD /* AnMoAppApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 439621FC2C03890B001C7EDD /* AnMoAppApp.swift */; };
+		439621FF2C03890B001C7EDD /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 439621FE2C03890B001C7EDD /* ContentView.swift */; };
+		439622012C03890C001C7EDD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 439622002C03890C001C7EDD /* Assets.xcassets */; };
+		439622042C03890C001C7EDD /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 439622032C03890C001C7EDD /* Preview Assets.xcassets */; };
+		4396220B2C038937001C7EDD /* Details.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4396220A2C038937001C7EDD /* Details.swift */; };
+		4396220D2C038946001C7EDD /* AnimeEpisode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4396220C2C038946001C7EDD /* AnimeEpisode.swift */; };
+		4396220F2C038956001C7EDD /* AnimeObserver.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4396220E2C038956001C7EDD /* AnimeObserver.swift */; };
+		439622142C038B87001C7EDD /* FirebaseDatabase in Frameworks */ = {isa = PBXBuildFile; productRef = 439622132C038B87001C7EDD /* FirebaseDatabase */; };
+		439622162C038B87001C7EDD /* FirebaseFirestore in Frameworks */ = {isa = PBXBuildFile; productRef = 439622152C038B87001C7EDD /* FirebaseFirestore */; };
+		439622182C038B87001C7EDD /* FirebaseStorage in Frameworks */ = {isa = PBXBuildFile; productRef = 439622172C038B87001C7EDD /* FirebaseStorage */; };
+		4396221B2C038BC1001C7EDD /* SDWebImageSwiftUI in Frameworks */ = {isa = PBXBuildFile; productRef = 4396221A2C038BC1001C7EDD /* SDWebImageSwiftUI */; };
+		43B06F022C065BE000C9958C /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 43B06F012C065BE000C9958C /* GoogleService-Info.plist */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		439621F92C03890B001C7EDD /* AnMoApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AnMoApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		439621FC2C03890B001C7EDD /* AnMoAppApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnMoAppApp.swift; sourceTree = "<group>"; };
+		439621FE2C03890B001C7EDD /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		439622002C03890C001C7EDD /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		439622032C03890C001C7EDD /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		4396220A2C038937001C7EDD /* Details.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Details.swift; sourceTree = "<group>"; };
+		4396220C2C038946001C7EDD /* AnimeEpisode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimeEpisode.swift; sourceTree = "<group>"; };
+		4396220E2C038956001C7EDD /* AnimeObserver.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimeObserver.swift; sourceTree = "<group>"; };
+		43B06F012C065BE000C9958C /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		439621F62C03890B001C7EDD /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4396221B2C038BC1001C7EDD /* SDWebImageSwiftUI in Frameworks */,
+				439622142C038B87001C7EDD /* FirebaseDatabase in Frameworks */,
+				439622162C038B87001C7EDD /* FirebaseFirestore in Frameworks */,
+				439622182C038B87001C7EDD /* FirebaseStorage in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		439621F02C03890B001C7EDD = {
+			isa = PBXGroup;
+			children = (
+				439621FB2C03890B001C7EDD /* AnMoApp */,
+				439621FA2C03890B001C7EDD /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		439621FA2C03890B001C7EDD /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				439621F92C03890B001C7EDD /* AnMoApp.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		439621FB2C03890B001C7EDD /* AnMoApp */ = {
+			isa = PBXGroup;
+			children = (
+				439621FC2C03890B001C7EDD /* AnMoAppApp.swift */,
+				439621FE2C03890B001C7EDD /* ContentView.swift */,
+				4396220A2C038937001C7EDD /* Details.swift */,
+				4396220C2C038946001C7EDD /* AnimeEpisode.swift */,
+				4396220E2C038956001C7EDD /* AnimeObserver.swift */,
+				439622002C03890C001C7EDD /* Assets.xcassets */,
+				43B06F012C065BE000C9958C /* GoogleService-Info.plist */,
+				439622022C03890C001C7EDD /* Preview Content */,
+			);
+			path = AnMoApp;
+			sourceTree = "<group>";
+		};
+		439622022C03890C001C7EDD /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				439622032C03890C001C7EDD /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		439621F82C03890B001C7EDD /* AnMoApp */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 439622072C03890C001C7EDD /* Build configuration list for PBXNativeTarget "AnMoApp" */;
+			buildPhases = (
+				439621F52C03890B001C7EDD /* Sources */,
+				439621F62C03890B001C7EDD /* Frameworks */,
+				439621F72C03890B001C7EDD /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = AnMoApp;
+			packageProductDependencies = (
+				439622132C038B87001C7EDD /* FirebaseDatabase */,
+				439622152C038B87001C7EDD /* FirebaseFirestore */,
+				439622172C038B87001C7EDD /* FirebaseStorage */,
+				4396221A2C038BC1001C7EDD /* SDWebImageSwiftUI */,
+			);
+			productName = AnMoApp;
+			productReference = 439621F92C03890B001C7EDD /* AnMoApp.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		439621F12C03890B001C7EDD /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1530;
+				LastUpgradeCheck = 1530;
+				TargetAttributes = {
+					439621F82C03890B001C7EDD = {
+						CreatedOnToolsVersion = 15.3;
+					};
+				};
+			};
+			buildConfigurationList = 439621F42C03890B001C7EDD /* Build configuration list for PBXProject "AnMoApp" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 439621F02C03890B001C7EDD;
+			packageReferences = (
+				439622122C038B87001C7EDD /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
+				439622192C038BC1001C7EDD /* XCRemoteSwiftPackageReference "SDWebImageSwiftUI" */,
+			);
+			productRefGroup = 439621FA2C03890B001C7EDD /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				439621F82C03890B001C7EDD /* AnMoApp */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		439621F72C03890B001C7EDD /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				439622042C03890C001C7EDD /* Preview Assets.xcassets in Resources */,
+				439622012C03890C001C7EDD /* Assets.xcassets in Resources */,
+				43B06F022C065BE000C9958C /* GoogleService-Info.plist in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		439621F52C03890B001C7EDD /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4396220D2C038946001C7EDD /* AnimeEpisode.swift in Sources */,
+				439621FF2C03890B001C7EDD /* ContentView.swift in Sources */,
+				4396220F2C038956001C7EDD /* AnimeObserver.swift in Sources */,
+				439621FD2C03890B001C7EDD /* AnMoAppApp.swift in Sources */,
+				4396220B2C038937001C7EDD /* Details.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		439622052C03890C001C7EDD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.4;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		439622062C03890C001C7EDD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.4;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		439622082C03890C001C7EDD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"AnMoApp/Preview Content\"";
+				DEVELOPMENT_TEAM = VG99BUBW7B;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.itsfiori.AnMoApp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		439622092C03890C001C7EDD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"AnMoApp/Preview Content\"";
+				DEVELOPMENT_TEAM = VG99BUBW7B;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.itsfiori.AnMoApp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		439621F42C03890B001C7EDD /* Build configuration list for PBXProject "AnMoApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				439622052C03890C001C7EDD /* Debug */,
+				439622062C03890C001C7EDD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		439622072C03890C001C7EDD /* Build configuration list for PBXNativeTarget "AnMoApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				439622082C03890C001C7EDD /* Debug */,
+				439622092C03890C001C7EDD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		439622122C038B87001C7EDD /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/firebase/firebase-ios-sdk.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 10.26.0;
+			};
+		};
+		439622192C038BC1001C7EDD /* XCRemoteSwiftPackageReference "SDWebImageSwiftUI" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/SDWebImage/SDWebImageSwiftUI";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 3.0.4;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		439622132C038B87001C7EDD /* FirebaseDatabase */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 439622122C038B87001C7EDD /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseDatabase;
+		};
+		439622152C038B87001C7EDD /* FirebaseFirestore */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 439622122C038B87001C7EDD /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseFirestore;
+		};
+		439622172C038B87001C7EDD /* FirebaseStorage */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 439622122C038B87001C7EDD /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseStorage;
+		};
+		4396221A2C038BC1001C7EDD /* SDWebImageSwiftUI */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 439622192C038BC1001C7EDD /* XCRemoteSwiftPackageReference "SDWebImageSwiftUI" */;
+			productName = SDWebImageSwiftUI;
+		};
+/* End XCSwiftPackageProductDependency section */
+	};
+	rootObject = 439621F12C03890B001C7EDD /* Project object */;
+}
